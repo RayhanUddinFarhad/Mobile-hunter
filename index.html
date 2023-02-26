@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="flex justify-center container mx-auto py-5">
+
+        <div class="form-control">
+            <div class="input-group">
+                <input id="search-input" type="text" placeholder="Search…" class="input input-bordered" />
+                <button id="search-btn" class="btn btn-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mx-auto flex justify-center ">
+
+
+        <p id="warning-text" class="text-yellow-500 text-3xl hidden">No data Found</p>
+    </div>
+
+
+    <main>
+
+
+        <section id="container" class="grid lg:grid-cols-3 gap-5 p-10">
+
+
+           
+        </section>
+
+        <progress id="spinner" class="progress w-56 mx-auto flex justify-center hidden "></progress>
+
+
+
+        <!-- Modal -->
+
+
+        <section class="p-10 space-y-7">
+
+
+           
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative">
+                    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <h3 id="phone-name" class="text-lg font-bold py-5">Congratulations random Internet user!</h3>
+                    <div id="image-container">
+
+                    </div>
+                    <p id="release-date" class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia
+                        for free!</p>
+
+                        <div id="list-container">
+
+
+                        </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+        <button id="show-all" onclick="showAll ()" class="btn  my-10 mx-auto hidden">Show All</button>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="Js/index.js"></script>
+
+
+</body>
+
+</html>
